@@ -1,0 +1,13 @@
+a- Probando obtener saldo y sacar el valor en consola
+
+se requiere de un script en bash para:
+AUTO REARGA POR CODIGOS USSD TIGO COLOMBIA
+necesidad: un stb de tv requiere acceso a internet, el usuario final no sabe ni que es 3g, el stb tiene un bug para manejar el dongle 3g, se usa un openwrt en un mr3020 para hacer esto con bash .....
+
+Archivo de estado (Carga|Sin carga) estado.txt
+Carga: esta activo con internet              = 1
+Sin carga: stanby , esperando que se recarge = 0
+
+saldo.txt
+Archivo con el saldo                         = $xxx.xx
+verificar saldo y escribirlo en un archivo  
