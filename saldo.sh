@@ -1,12 +1,14 @@
 #!/bin/sh
 # zte mf180  - openwrt mr3020 - consultar saldo ,tigo , falta convertir el resultado
+# uso
+# ./saldo.sh COMPORT TIMEOUTMS
 
-device="/dev/ttyUSB1"
+device="/dev/ttyUSB$1"
 command="AT+CUSD=1,*10#,15\r" # *10# get prepaid $$$$
 
 tmp_file="/tmp/ussd_response.txt"
 
-if ! echo "$1" | egrep -q "^[0-9]+$" ; then
+if ! echo "$2" | egrep -q "^[0-9]+$" ; then
   >&2 echo "sleep time is required (first argument)"
   exit 1
 fi
