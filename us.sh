@@ -58,4 +58,4 @@ done
 
 bin2ascii $ussd_responses
 
-echo -e "$ussd_responses" | 
+echo "$ussd_responses"
