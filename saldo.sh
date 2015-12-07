@@ -12,7 +12,7 @@ if ! echo "$2" | egrep -q "^[0-9]+$" ; then
   >&2 echo "sleep time is required (first argument)"
   exit 1
 fi
-sleep_time=$1
+sleep_time=$2
 
 cp /dev/null "$tmp_file"
 cat "$device" > "$tmp_file" &
@@ -47,4 +47,5 @@ s/\
 /\1/gip\
   ")
 done
-echo "$ussd_responses"
+
+echo -e "$ussd_responses"
