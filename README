@@ -1,6 +1,10 @@
 
 ref
 https://gist.github.com/andrew-aladev/1d160bca305238b35d15
+https://forum.openwrt.org/viewtopic.php?id=39011
+https://forum.openwrt.org/viewtopic.php?pid=158891#p158891
+https://code.google.com/p/openwrt-on-dir-320-b1/wiki/Balance
+https://code.google.com/p/qussd/source/browse/qussd/qussd.sh
 
 
 a- Probando obtener saldo y sacar el valor en consola correctamente
@@ -18,7 +22,12 @@ trap: SIGINT: bad trap
 0069006E004600610076006F007200690074006F002C002B0069006E0066006F003A0065006E
 0020002A00310031003100230020006F007000630069006F006E00200036
 
-como convertir mensajes gsm7bit a texto normal ?
+
+-----------------------------------------------------------------------------------
+
+PROBLEMA 
+
+como convertir mensajes UCS2 a texto normal ?
 
 se requiere de un script en bash para:
 AUTO RECARGA POR CODIGOS USSD TIGO COLOMBIA
